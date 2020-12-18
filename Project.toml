@@ -1,0 +1,7 @@
+name = "ElementSymbols"
+uuid = "05abb99a-2616-4a0f-b7a8-7cbd3e8a9a5b"
+authors = ["Haoxuan Guo <kuohaoxuan@outlook.com>"]
+version = "0.1.0"
+
+[compat]
+julia = "^1.5"
