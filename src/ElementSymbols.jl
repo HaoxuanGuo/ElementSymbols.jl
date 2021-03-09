@@ -17,7 +17,15 @@ const element_symbols = [
    "Rg", "Cn", "Nh", "Fl", "Mc", "Lv", "Ts", "Og"
    ]
 
-element_symbol(zahl::Integer) = element_symbols[zahl]
+function element_symbol(zahl::Integer)
+    if zahl == 0
+        return "n"
+    elseif zahl > 0 && zahl <= length(element_symbols)
+        return element_symbols[zahl]
+    else
+        return "X"
+    end
+end
 
 zahl(symbol::AbstractString) = indexin([symbol], element_symbols)[begin]
 
